@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "34b48ecd-b907-44ab-8cbb-cd75a9aeee90",
+		"name": "Azbow_Lead_CRM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "1145581"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/auth/signup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"firstname\": \"Chathura Ruwan Bandara\",\r\n                \"lastname\": \"Gawarammana\",\r\n                \"password\": \"123456\",\r\n                \"email\": \"ruwan.gawarammana@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/auth/signup"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/auth/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"password\": \"123456\",\r\n                \"email\": \"ruwan.gawarammana@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/auth/login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/customers/add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDA3MTY4NjcsImV4cCI6MTc0MDgwMzI2NywiZW1haWwiOiJydXdhbi5nYXdhcmFtbWFuYUBnbWFpbC5jb20ifQ.JdaCf-VNex7tUEue7VbAd2SBvCxLM_BpN1be4f_zJPU"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"preferredName\": \"Chathura Ruwan Bandara Gawarammana\",\r\n                \"preferredContactNumber\": \"0094775105403\",\r\n                \"budget\": \"12000000.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/customers/add"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/customers/addRegisteredCustomer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDA3MTY4NjcsImV4cCI6MTc0MDgwMzI2NywiZW1haWwiOiJydXdhbi5nYXdhcmFtbWFuYUBnbWFpbC5jb20ifQ.JdaCf-VNex7tUEue7VbAd2SBvCxLM_BpN1be4f_zJPU"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"preferredName\": \"Chathura Ruwan Bandara Gawarammana\",\r\n                \"preferredContactNumber\": \"0094775105403\",\r\n                \"budget\": \"12000000.00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/customers/addRegisteredCustomer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/leadStatus/add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDA3MzI4MjYsImV4cCI6MTc0MDgxOTIyNiwiZW1haWwiOiJydXdhbi5nYXdhcmFtbWFuYUBnbWFpbC5jb20ifQ.z6rfzhuwMP8zKGoFqtzb08WhWeD-UQ13PzP-oybIFJQ"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Unassigned\",\r\n    \"code\":\"UAS\",\r\n    \"description\":\"Sales Agent not assisnged\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/leadStatus/add"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/leadStatus/add",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDA3MzI4MjYsImV4cCI6MTc0MDgxOTIyNiwiZW1haWwiOiJydXdhbi5nYXdhcmFtbWFuYUBnbWFpbC5jb20ifQ.z6rfzhuwMP8zKGoFqtzb08WhWeD-UQ13PzP-oybIFJQ"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Inquiry\",\r\n    \"code\":\"INQ\",\r\n    \"description\":\"Customer's Inquiry\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/leadType/add"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/customers/add/inquiry",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3NDA3Mzc1NzYsImV4cCI6MTc0MDgyMzk3NiwiZW1haWwiOiJydXdhbi5nYXdhcmFtbWFuYUBnbWFpbC5jb20ifQ._ziaDyb57y_vDtpkWL0tVr3r8EyVW-xkxe2iwX7yPw8"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n                \"name\": \"1/2 acre land\",\r\n                \"description\": \"0094771839438\",\r\n                \"source\": \"Boralesgamuwa\",\r\n                \"leadStatus\": {\r\n                    \"name\": \"Unassigned\",\r\n                    \"code\":\"UAS\"\r\n                },\r\n                \"leadType\":{\r\n                    \"name\":\"Inquiry\",\r\n                    \"code\":\"INQ\"\r\n                }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/customers/add/inquiry"
+			},
+			"response": []
+		}
+	]
+}
